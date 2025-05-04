@@ -7,6 +7,11 @@ const DoctorSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    middleName: {
+      type: String,
+      required: false,
+      trim: true,
+    },
     lastName: {
       type: String,
       required: true,
