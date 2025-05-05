@@ -125,13 +125,3 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 We’re building something great and we’d love for you to be part of it. Contributions, suggestions, and improvements are always welcome!
 
 ---
-
-> Feel free to replace the "Badges" section with any other metrics or project details you'd like to highlight. You can also include motion or animation references by integrating front-end technologies like React (with animations) or by linking to project-specific demos or gif walkthroughs.
-
----
-
-### 🎨 **What’s Changed:**
-- Added **lightning-themed tech stack icons** to make the README more visually exciting.
-- Updated **Tech Stack** with interactive **shields.io** icons to represent various technologies.
-
----
