@@ -5,3 +5,5 @@ const registeruser =asyncHandler(async (req,res) => {
         message:"ok"
     })    
 })
+
+export{registeruser}
