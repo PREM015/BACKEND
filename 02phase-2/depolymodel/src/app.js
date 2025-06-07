@@ -27,7 +27,9 @@ app.use(cookieParser())
 
 // ----------- Route Imports -----------
 // Importing various route files (each handles a specific part of the API)
-// import userRouter from './routes/user.route.js'
+import userRouter from './routes/user.route.js';
+
+
 // import healthcheckRouter from "./routes/healthcheck.routes.js"
 // import tweetRouter from "./routes/tweet.routes.js"
 // import subscriptionRouter from "./routes/subscription.routes.js"
@@ -42,7 +44,7 @@ app.use(cookieParser())
 // Each path maps to a specific functionality in the application
 
 // app.use("/api/v1/healthcheck", healthcheckRouter)     // Health check route to monitor server status
-// app.use("/api/v1/users", userRouter)                  // Routes related to user registration, login, profile, etc.
+ app.use("/api/v1/users", userRouter)                  // Routes related to user registration, login, profile, etc.
 // app.use("/api/v1/tweets", tweetRouter)                // Tweet posting and fetching routes
 // app.use("/api/v1/subscriptions", subscriptionRouter)  // Subscription-related functionality
 // app.use("/api/v1/videos", videoRouter)                // Video upload, listing, and playback routes
