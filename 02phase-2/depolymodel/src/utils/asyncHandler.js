@@ -3,7 +3,7 @@
 
 const asyncHandler = (requestHandler) => {
   // Returns a new function that Express will use as middleware
-  return (req, res, next) => {
+      (req, res, next) => {
     // Call the original async request handler and wrap it in a Promise
     // If it throws an error, catch it and pass the error to next() so Express can handle it
     Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err))

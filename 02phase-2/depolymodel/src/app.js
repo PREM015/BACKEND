@@ -27,29 +27,29 @@ app.use(cookieParser())
 
 // ----------- Route Imports -----------
 // Importing various route files (each handles a specific part of the API)
-import userRouter from './routes/user.routes.js'
-import healthcheckRouter from "./routes/healthcheck.routes.js"
-import tweetRouter from "./routes/tweet.routes.js"
-import subscriptionRouter from "./routes/subscription.routes.js"
-import videoRouter from "./routes/video.routes.js"
-import commentRouter from "./routes/comment.routes.js"
-import likeRouter from "./routes/like.routes.js"
-import playlistRouter from "./routes/playlist.routes.js"
-import dashboardRouter from "./routes/dashboard.routes.js"
+// import userRouter from './routes/user.route.js'
+// import healthcheckRouter from "./routes/healthcheck.routes.js"
+// import tweetRouter from "./routes/tweet.routes.js"
+// import subscriptionRouter from "./routes/subscription.routes.js"
+// import videoRouter from "./routes/video.routes.js"
+// import commentRouter from "./routes/comment.routes.js"
+// import likeRouter from "./routes/like.routes.js"
+// import playlistRouter from "./routes/playlist.routes.js"
+// import dashboardRouter from "./routes/dashboard.routes.js"
 
 // ----------- Route Declarations -----------
 // Defining base paths for each router
 // Each path maps to a specific functionality in the application
 
-app.use("/api/v1/healthcheck", healthcheckRouter)     // Health check route to monitor server status
-app.use("/api/v1/users", userRouter)                  // Routes related to user registration, login, profile, etc.
-app.use("/api/v1/tweets", tweetRouter)                // Tweet posting and fetching routes
-app.use("/api/v1/subscriptions", subscriptionRouter)  // Subscription-related functionality
-app.use("/api/v1/videos", videoRouter)                // Video upload, listing, and playback routes
-app.use("/api/v1/comments", commentRouter)            // Commenting on videos/tweets
-app.use("/api/v1/likes", likeRouter)                  // Liking videos, tweets, or comments
-app.use("/api/v1/playlist", playlistRouter)           // Playlist creation and management
-app.use("/api/v1/dashboard", dashboardRouter)         // Admin/creator dashboard route
+// app.use("/api/v1/healthcheck", healthcheckRouter)     // Health check route to monitor server status
+// app.use("/api/v1/users", userRouter)                  // Routes related to user registration, login, profile, etc.
+// app.use("/api/v1/tweets", tweetRouter)                // Tweet posting and fetching routes
+// app.use("/api/v1/subscriptions", subscriptionRouter)  // Subscription-related functionality
+// app.use("/api/v1/videos", videoRouter)                // Video upload, listing, and playback routes
+// app.use("/api/v1/comments", commentRouter)            // Commenting on videos/tweets
+// app.use("/api/v1/likes", likeRouter)                  // Liking videos, tweets, or comments
+// app.use("/api/v1/playlist", playlistRouter)           // Playlist creation and management
+// app.use("/api/v1/dashboard", dashboardRouter)         // Admin/creator dashboard route
 
 // Example: To register a user, you'd use this route:
 // http://localhost:8000/api/v1/users/register

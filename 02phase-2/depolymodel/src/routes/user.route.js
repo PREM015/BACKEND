@@ -14,13 +14,13 @@ import {
     getUserChannelProfile, 
     getWatchHistory, 
     updateAccountDetails
-} from "../controllers/user.controller.js";
+} from "../controller/user.controller.js";
 
 // Import middleware for file uploads using multer
-import { upload } from "../middlewares/multer.middleware.js";
+import { upload } from "../middleware/multer.middleware.js";
 
 // Import custom middleware to verify JWT tokens for protected routes
-import { verifyJWT } from "../middlewares/auth.middleware.js";
+import { verifyJWT } from "../middleware/auth.middleware.js";
 
 // Create a new Express Router instance
 const router = Router()
