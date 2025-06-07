@@ -86,10 +86,16 @@
 
 // // Export the configured router so it can be used in app.js
 // export default router
-import { Router } from "express";
-import { registeruser } from "../controllers/user.controller.js"; // Correct import
 
-const router = Router();
+// --- Minimal router setup ---
 
-router.route("/register").post(registeruser); 
+import { Router } from "express";  // Import Express Router for modular route management
+import { registeruser } from "../controllers/user.controller.js"; // Import the registration controller
+
+const router = Router();  // Create a new router instance
+
+// Define POST route for user registration using the registeruser controller
+router.route("/register").post(registeruser);
+
+// Export the router instance to use in main app (e.g., app.js or index.js)
 export default router;
