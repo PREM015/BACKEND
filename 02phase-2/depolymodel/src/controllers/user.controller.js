@@ -30,6 +30,7 @@ const generateAccessAndRefereshTokens = async (userId) => {
     }
 }
 
+
 /**
  * Registers a new user.
  * Steps:
@@ -68,7 +69,7 @@ const registeruser = asyncHandler(async (req, res) => {
     if (existedUser) {
         throw new ApiError(409, "User with email or username already exists");
     }
-    //console.log(req.files);
+    console.log(req.files);
 
     // Extract avatar file path from uploaded files
     const avatarLocalPath = req.files?.avatar[0]?.path;
