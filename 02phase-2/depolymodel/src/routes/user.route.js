@@ -15,7 +15,7 @@ import { registeruser } from "../controllers/user.controller.js";
     getUserChannelProfile, 
     getWatchHistory, 
     updateAccountDetails 
-} from "../controllers/user.controller.js";  // ✅ Fixed import path from "controller" → "controllers"*/
+} from "../controllers/user.controller.js"; "*/
 
 // Import middleware for file uploads using multer
 import { upload } from "../middleware/multer.middleware.js";  
