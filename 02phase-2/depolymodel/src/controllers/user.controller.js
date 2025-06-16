@@ -6,7 +6,7 @@ import { ApiResponse } from "../utils/ApiResponse.js";
 import jwt from "jsonwebtoken";
 import mongoose from "mongoose";
 
-/**
+/*
  * Generates new access and refresh tokens for a given userId.
  * Saves the new refresh token in the user document.
  * @param {String} userId
