@@ -58,3 +58,19 @@ app.options("/user", (req, res) => {
 // - Rarely used in practice due to security concerns.
 // - Not supported in most modern frameworks like Express.js.
 // Example (not in Express): Sent by tools like Postman or curl for debugging.
+
+
+// 9. CONNECT
+// - Used to establish a network connection (e.g., tunnel to a server via a proxy).
+// - Rarely used in standard APIs.
+// - Mostly handled at lower levels (e.g., HTTP proxies like NGINX or browser).
+// - Not supported by Express.js directly.
+// Example: Used in HTTPS proxying (like `CONNECT example.com:443 HTTP/1.1`)
+
+
+// 10. ANY (Express-specific method)
+// - Matches **any HTTP method** for a given route.
+// - Used when you want to handle all methods the same way.
+app.all("/any-route", (req, res) => {
+  res.send(`Handled ${req.method} method at /any-route`);
+});
