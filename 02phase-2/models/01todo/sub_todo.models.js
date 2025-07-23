@@ -15,7 +15,7 @@ const subtodoSchema = new mongoose.Schema(
       ref: 'User',
     },
   },
-  { timestamps: true }  // ✅ note: "timestamps", not "timestamp"
+  { timestamps: true } 
 );
 
 // Export model
