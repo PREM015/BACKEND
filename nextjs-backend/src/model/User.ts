@@ -1,4 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+ 
 import mongoose, { Schema, Document } from "mongoose";
 
 // message schema
@@ -33,7 +33,7 @@ export interface User extends Document {
   isverified: boolean;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+ 
 const Userschema: Schema<User> = new Schema({
   username: {
     type: String,
