@@ -1,0 +1,1 @@
+// appointment.model.js placeholder
