@@ -1,0 +1,114 @@
+// prisma-commands.js
+// 📌 Prisma CLI Commands Reference for Next.js Projects
+// Keep this file in your project for quick reference (not for execution)
+
+const prismaCommands = [
+  {
+    category: "Initialization & Setup",
+    commands: [
+      {
+        cmd: "npx prisma init",
+        what: "Creates a prisma/ folder with schema.prisma and .env file",
+        when: "Use this at the very beginning to set up Prisma in your project",
+      },
+    ],
+  },
+  {
+    category: "Schema & Migration",
+    commands: [
+      {
+        cmd: "npx prisma migrate dev",
+        what: "Applies schema changes and creates a migration file",
+        when: "While developing, after adding/updating models",
+      },
+      {
+        cmd: "npx prisma migrate reset",
+        what: "Drops DB, reapplies migrations, runs seed (if any)",
+        when: "If DB is broken and you want a fresh start",
+      },
+      {
+        cmd: "npx prisma migrate deploy",
+        what: "Applies pending migrations in production (no new ones)",
+        when: "During production deployment",
+      },
+      {
+        cmd: "npx prisma migrate status",
+        what: "Shows migration status (applied/pending)",
+        when: "To check if DB is up-to-date",
+      },
+    ],
+  },
+  {
+    category: "Database Introspection",
+    commands: [
+      {
+        cmd: "npx prisma db pull",
+        what: "Reads existing DB and updates schema.prisma",
+        when: "If you already have a database schema",
+      },
+      {
+        cmd: "npx prisma db push",
+        what: "Pushes schema changes to DB (no migrations)",
+        when: "For quick prototyping (not for production)",
+      },
+    ],
+  },
+  {
+    category: "Database Management",
+    commands: [
+      {
+        cmd: "npx prisma db seed",
+        what: "Runs the seed script defined in prisma/seed.ts or package.json",
+        when: "To insert sample/test data",
+      },
+    ],
+  },
+  {
+    category: "Prisma Client",
+    commands: [
+      {
+        cmd: "npx prisma generate",
+        what: "Generates Prisma Client from schema",
+        when: "After modifying schema.prisma",
+      },
+    ],
+  },
+  {
+    category: "Prisma Studio",
+    commands: [
+      {
+        cmd: "npx prisma studio",
+        what: "Opens a UI to view/edit your DB",
+        when: "To quickly manage data (like phpMyAdmin)",
+      },
+    ],
+  },
+  {
+    category: "Utilities",
+    commands: [
+      {
+        cmd: "npx prisma format",
+        what: "Formats schema.prisma file",
+        when: "To keep schema clean & readable",
+      },
+      {
+        cmd: "npx prisma validate",
+        what: "Validates schema.prisma for errors",
+        when: "Before migration to avoid issues",
+      },
+    ],
+  },
+];
+
+// ✅ Quick Example Flow in Next.js + Prisma
+const exampleFlow = [
+  "npx prisma init → Setup Prisma",
+  "Edit schema.prisma → Add models (User, Product, etc.)",
+  "npx prisma migrate dev --name init → Create & apply migration",
+  "npx prisma generate → Update Prisma Client",
+  "Use Prisma Client in Next.js (import { prisma } from '@/lib/db')",
+  "npx prisma studio → Check database in browser",
+];
+
+// Exporting (optional)
+module.exports = { prismaCommands, exampleFlow };
